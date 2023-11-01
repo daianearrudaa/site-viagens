@@ -1,0 +1,600 @@
+*{
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(244, 244, 244, 0.424);
+    min-width: 100vw;
+}
+
+header{
+    display: flex;
+    border-bottom: 2px solid rgb(217, 213, 213);
+    align-items: center;
+    justify-content: space-between;
+  
+}
+
+
+
+.container1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1em;
+    align-items: center;
+    background-color: #fff;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+    margin-left: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-logo span{
+    font-size: 25px;
+    color: rgba(246, 43, 43, 0.838);
+    margin-left: 0.2em;
+    font-weight: 600;
+}
+
+#icon-geo{
+    height: 1.2em;
+    cursor: pointer;
+}
+
+#icon-search{
+    margin-right: 1.5em;
+    height: 2px; 
+    cursor: pointer;  
+}
+
+#icon-search img{
+    height: 25px;
+    
+}
+
+
+.a{
+    background-image: url('./imagens/london.jpg');
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.card {
+    width: 65%;
+    margin: 11em auto;  
+    font-family: 'Raleway', sans-serif; 
+}
+
+.card h2{
+    font-weight: 400;
+}
+
+.card-central{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.card-central button{
+    background-color: black;
+    color: aliceblue;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+    width: 34%;
+}
+
+.card-central button:hover{
+    background-color: red;
+}
+
+
+.card-central button i{
+    margin-right: 1em;
+}
+
+.fa-rotate-270{
+    transform: rotate(320deg);
+}
+
+
+.form-tab{
+    width: 100%;
+    display: flex; 
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.form-tab label{
+    font-weight: 300;
+}
+
+
+.tab{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+    
+    background-color: rgb(255, 255, 255);
+}
+ 
+.tab h2{
+    padding-top: 1.2em;
+}
+
+.tab button{
+    background-color: #666666;
+    color: aliceblue;
+    border: none;
+    
+    cursor: pointer;
+    margin-bottom: 2em;
+    font-size: 15px;
+    width: 12em;
+    height: 2.5em;
+    
+}
+
+
+
+.tab .form-1,
+.tab .form-2 {
+    display: flex;
+    flex-direction: column;
+    width: 60%; /* Divide o espaço para os campos "From" e "To" */
+}
+
+
+
+.input1{
+    display: block;
+    width: 95%;
+    max-width: 45em;
+    padding: 0.7em;
+    outline: none;
+
+}
+
+.input1, .input2{
+    border: 1px solid rgb(212, 209, 209);
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+.container2{
+    display: flex;
+    max-width: 1366px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    padding-bottom: 2em;
+    font-family: 'Raleway', sans-serif;
+   
+}
+
+.container2 h4,.container2 h2{
+    font-weight: 300;
+    
+}
+
+.section2{
+    width: 100%;
+}
+
+.image{
+    display: flex;
+    width: 100%;
+    
+}
+
+.img1 img{
+    max-width: 100%;
+    height: 100%;
+    padding-right: 1em;
+   
+}
+
+.image-container{
+    position: relative;
+   
+}
+
+.text-overlay {
+    position: absolute;
+    color: #fff; /* Cor do texto */
+    top: 80%; /* Ajuste a posição vertical conforme necessário */
+    left: 5%;
+}
+
+.text1{
+    position: absolute;
+    color: #fff; /* Cor do texto */
+    top: 91%; /* Ajuste a posição vertical conforme necessário */
+    left: 3%;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1em;
+
+    
+}
+
+
+.grid img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* primeira tentativa:
+.section3{
+    width: 100%;
+}
+
+.blocos{
+    display: flex;
+    
+    
+}
+
+.bloco1{
+    margin-right: 0.5em;
+}
+
+.bloco2 {
+    margin-left: 0.5em;
+}
+
+.section3 img{
+    height: 80%;
+    width: 100%;
+
+}
+*/
+
+.section3{
+    display: flex;
+    flex-direction: column;
+}
+.blocos{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1em;
+}
+
+.blocos h4,.blocos h2{
+    padding: 1em;
+}
+
+.bloco1 , .bloco2{
+    background-color: #fff;
+}
+
+.blocos img{
+    height: auto;
+    width: 100%;
+}
+
+.blocos span{
+    font-weight: lighter;
+}
+
+.buy{
+    padding-left: 1em;
+}
+
+.card-preto{
+    background-color: rgb(104, 102, 102);
+    color: #fff;
+    width: 100%;
+    padding: 2em 1em 1em 1em ;
+    font-weight: lighter;
+
+}
+
+.card-preto input{
+    width: 100%;
+    height: 3em;
+    font-weight: lighter;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    padding-left: 0.5em;
+       
+}
+
+.card-preto button{
+    width: 10%;
+    height: 3em;
+    background-color: rgba(247, 132, 132, 0.946);
+    color: #fff;
+    border: none;
+    
+}
+
+.card-preto form{
+   padding-bottom: 1em;
+    
+}
+
+.card-preto h3{
+    font-weight: lighter;
+}
+
+.card-preto h1{
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.contact{
+    width: 100%;
+    
+}
+
+.contact input{
+    padding: 1.5em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #cdcccc;
+    
+}
+
+.contact h6{
+    padding-top: 0.5em;
+    font-size: 0.9em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+.contact h2{
+    font-weight: 400;
+    font-size: 1.8em;
+}
+
+.contact i{
+    font-size: 1.2em;
+    margin-right: 1em;
+}
+
+#button-contact{
+    width: 22%;
+    background-color: black;
+    color: #fff;
+    padding: 1em;
+    border: none;
+    height: 3.2em;
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:15em ;
+    color: #7a7979;
+}
+footer .icons-footer{
+    padding: 2em;
+    font-size: 1.5em;
+}
+
+footer h4{
+    padding-top: 2em;
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+footer h5{
+    font-size: 1em;
+    font-weight: lighter;
+    padding-bottom: 2em;
+}
+
+footer span{
+    text-decoration: underline;
+}
+
+
+
+@media  (max-width: 768px) {
+    
+    .logo{
+        margin-left: 20%;
+    }
+
+    #icon-search{
+        margin-right: 20%;
+    }
+
+    .a{
+        height: 40vh;
+    }
+
+    .container2{
+        width: 90%;
+    }
+
+    .card-preto button{
+        width: 15%;  
+    }
+}
+
+@media  (max-width: 450px) {
+
+    header{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .logo {
+        height: 1rem;
+        margin-left: 2em;
+
+    }
+
+    #icon-search img{
+       height: 1.5em;
+       margin-right: -2em;
+    }
+
+    .a{
+        background-image: none;
+        display: block;
+        margin: 0;
+        height: 35vh;
+    }
+
+    .container1{
+        width: 100%;
+    }
+
+    .container2{
+        width: 80%;
+    }
+
+    .card{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .card-central{
+        justify-content:flex-start;
+        
+    }
+
+    .card-central button{
+        margin-left: 1em;
+        width: auto;
+      }
+    .tab{
+        padding: 2em;
+        width: 100%;
+    }
+
+    .tab button{
+        width: 50%;
+    }
+
+    .form-tab {
+    display: block;
+    width: 30em;
+    } 
+    
+    .section{
+    width: 100% ;
+    }
+    .section2{
+        width: 100%;
+        padding-top: 7em;
+    }
+    
+    .image{
+        display: block;
+    }
+    .grid{
+        display: block;
+    }
+    .img1 img{
+        padding-right: 0em; 
+    }
+
+    .text-overlay, .text1 {
+        position: absolute;
+        color: #fff; /* Cor do texto */
+        top: 85%; /* Ajuste a posição vertical conforme necessário */
+        left: 4%;
+    }
+
+    .blocos{
+        display: block;
+    }
+
+    .bloco1{
+        margin-bottom: 1em;
+    }
+
+    .card-preto h3{
+        font-size: 1em;
+    }
+    
+    .card-preto h1{
+        font-size: 1.5em;
+    }
+
+    .card-preto button{
+        width: 30%;
+        height: 2.5em; 
+    }
+
+    .contact input{
+        margin-bottom: 0; 
+        height: 2em;
+    }
+    #button-contact{
+        margin-top: 1em;
+        width: 50%;
+    }
+
+    footer{
+        font-size: 80%;
+        height: 20vh;
+    }
+
+    
+}
+
+@media  (max-width: 320px){
+    #button-contact{
+        width: 60%;
+    }
+
+    .tab{
+        padding: 1em;
+    }
+
+    .tab button{
+        width: 60%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
