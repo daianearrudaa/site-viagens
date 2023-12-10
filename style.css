@@ -333,8 +333,7 @@ header{
     height: 3em;
     background-color: rgba(247, 132, 132, 0.946);
     color: #fff;
-    border: none;
-    
+    border: none;    
 }
 
 .card-preto form{
@@ -384,13 +383,15 @@ header{
 }
 
 #button-contact{
-    width: 22%;
+    
+    max-width: 45%;
     background-color: black;
     color: #fff;
-    padding: 1em;
     border: none;
     height: 3.2em;
     text-align: center;
+    white-space: nowrap;
+    padding: 5px;
 }
 
 footer{
@@ -447,7 +448,7 @@ footer span{
     }
 }
 
-@media  (max-width: 450px) {
+@media  (max-width: 500px) {
 
     header{
         width: 100%;
@@ -556,13 +557,19 @@ footer span{
         height: 2.5em; 
     }
 
+
+
     .contact input{
         margin-bottom: 0; 
         height: 2em;
     }
-    #button-contact{
+    #button-contact{  
+       
+        display: flex;
+        align-items: center;
         margin-top: 1em;
-        width: 50%;
+        
+
     }
 
     footer{
@@ -570,12 +577,13 @@ footer span{
         height: 20vh;
     }
 
-    
+  
 }
 
 @media  (max-width: 320px){
     #button-contact{
-        width: 60%;
+        font-size: xx-small;
+        
     }
 
     .tab{
